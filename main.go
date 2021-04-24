@@ -301,7 +301,7 @@ func main() {
 	var i int
 	for i=0; i<num_act; i++{
 		var act string
-		fmt.Print("Actions: ")
+		fmt.Print("Action: ")
 		fmt.Scanln(&act)
 		to_do = append(to_do, actions[act])
 		//for n := range actions {
@@ -330,7 +330,8 @@ func main() {
 			g := gift.New(to_do[name])
 			dst := image.NewNRGBA(g.Bounds(src.Bounds()))
 			g.Draw(dst, src)
-			saveImage("N:\\MINE\\Mentalists\\PBL4\\code\\dsl\\z-product_.png", dst) //path to image + name of the generated image
+			saveImage("..\\z-product_.png", dst) //path to image + name of the generated image
+			fille = "..\\z-product_.png"
 				//to be reviewed
 			//for j := range act_list{
 			//
